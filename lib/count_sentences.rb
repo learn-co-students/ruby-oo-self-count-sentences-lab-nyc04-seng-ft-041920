@@ -16,6 +16,6 @@ class String
 
   def count_sentences
     array = self.split(/\.|\?|\!/)
-    array.count { |sent| sent.length > 1 }
+    array.count { |sent| sent != "" }
   end
 end
