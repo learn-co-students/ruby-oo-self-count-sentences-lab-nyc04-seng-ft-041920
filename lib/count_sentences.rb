@@ -22,9 +22,10 @@ class String
   def count_sentences
     new_array = self.split(/[.!?]/)
     new_array.delete_if{|ele| ele.empty?}
+        binding.pry
+
     return new_array.count
     
-    binding.pry
 
   end
 
